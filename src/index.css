@@ -128,8 +128,8 @@ ul {
 
 .btn {
   cursor: pointer;
-  color: var(--white);
-  background: var(--primary-500);
+  color: var(--black);
+  background:  var(--white);
   border: transparent;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -138,10 +138,12 @@ ul {
   transition: var(--transition);
   text-transform: capitalize;
   display: inline-block;
+  min-height: 35px;
 }
 .btn:hover {
-  background: var(--primary-700);
+  background: var(--primary-300);
   box-shadow: var(--shadow-3);
+  color: var(--white);
 }
 .btn-hipster {
   color: var(--primary-500);
@@ -154,5 +156,47 @@ ul {
 .btn-block {
   width: 100%;
 }
-
-
+.btn-down{
+  margin-left: 10px;
+  margin-right: 50px;
+}
+.logo{
+  display: flex;
+    align-items: center;
+    width: 80px;
+    margin: auto;
+    padding-top: 10px;
+}
+.logo-div{
+  height: 120px;
+  box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.2);
+}
+.logo-div:hover{
+  cursor: pointer;
+}
+.profile{
+  display: flex;
+  justify-content : center;
+  align-items: center;
+  height: 200px; 
+  box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.2);
+}
+.profilepic{
+   width: 80px; 
+   border-radius: 50%;
+   margin-left: 40px;
+}
+.profile-name{
+  display: flex;
+  align-items: center;
+  justify-items: center; 
+  margin-left: 20px;
+}
+.sidebar-btn{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 180px;
+}
