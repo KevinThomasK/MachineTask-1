@@ -12,6 +12,7 @@ const Wrapper = styled.nav`
     align-items: center;
     width: 100px;
   }
+
   .nav-center {
     display: flex;
     width: 90vw;
@@ -82,6 +83,9 @@ const Wrapper = styled.nav`
     .logo-text {
       display: block;
     }
+  }
+  @media (max-width: 992px) {
+    justify-content: space-between;
   }
 `;
 export default Wrapper;
