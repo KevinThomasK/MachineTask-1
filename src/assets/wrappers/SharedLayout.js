@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section`
+  overflow: hidden;
+
   .dashboard {
     display: grid;
     grid-template-columns: 1fr;

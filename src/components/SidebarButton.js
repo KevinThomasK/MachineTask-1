@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { MdDashboard } from "react-icons/md";
 import { RiPlantFill } from "react-icons/ri";
@@ -8,21 +8,44 @@ import { SlSupport } from "react-icons/sl";
 
 const SidebarButton = () => {
   const navigate = useNavigate();
+  const [activeButton, setActiveButton] = useState("dashboard");
+  const handleButtonClick = (button) => {
+    setActiveButton(button);
+  };
+  const doubleFunc = (param1, param2) => {
+    navigate(param1);
+    handleButtonClick(param2);
+  };
   return (
     <>
-      <button className="btn sidebar-btn" onClick={() => navigate("/")}>
-        <MdDashboard className="sidebar-icon" /> Dashboard
+      <button
+        className={activeButton === "dashboard" ? "actives" : "btn sidebar-btn"}
+        onClick={() => doubleFunc("/", "dashboard")}
+      >
+        <MdDashboard className="sidebar-icon " /> Dashboard
       </button>
-      <button className="btn sidebar-btn" onClick={() => navigate("/perks")}>
+      <button
+        className={activeButton === "perks" ? "actives" : "btn sidebar-btn"}
+        onClick={() => doubleFunc("/perks", "perks")}
+      >
         <RiPlantFill className="sidebar-icon" /> Perks
       </button>
-      <button className="btn sidebar-btn" onClick={() => navigate("/add-ons")}>
+      <button
+        className={activeButton === "addons" ? "actives" : "btn sidebar-btn"}
+        onClick={() => doubleFunc("/add-ons", "addons")}
+      >
         <BsFillPuzzleFill className="sidebar-icon" /> Addons
       </button>
-      <button className="btn sidebar-btn" onClick={() => navigate("/faq")}>
+      <button
+        className={activeButton === "faq" ? "actives" : "btn sidebar-btn"}
+        onClick={() => doubleFunc("/faq", "faq")}
+      >
         <FaCircleQuestion className="sidebar-icon" /> FAQ
       </button>
-      <button className="btn sidebar-btn" onClick={() => navigate("/support")}>
+      <button
+        className={activeButton === "support" ? "actives" : "btn sidebar-btn"}
+        onClick={() => doubleFunc("/support", "support")}
+      >
         <SlSupport className="sidebar-icon" /> Support
       </button>
     </>

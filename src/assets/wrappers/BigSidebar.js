@@ -6,6 +6,7 @@ const Wrapper = styled.aside`
     display: block;
     box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.1);
     width: 200px;
+
     .sidebar-container {
       background: var(--white);
       min-height: 100vh;

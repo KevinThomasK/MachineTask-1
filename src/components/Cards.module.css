@@ -1,0 +1,122 @@
+.cardContainer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 325px;
+    background:var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0, 0.2);
+    margin: 20px;
+    
+}
+.card h3{
+    padding: 16px;
+    font-weight: 600;
+}
+.cardContent{
+    padding: 16px;
+    margin-top: -30px;
+}
+.cardContent h5{
+    font-size:x-small;
+    font-weight: 600;
+    margin-left: 10px;
+    
+}
+.cardContent h2{
+    font-size: small;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+.horizontal{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+/* @media (max-width: 1420px) {
+   
+    .card{
+        width:400px ;
+    }
+    
+} */
+
+@media (max-width: 1120px) {
+    .cardContainer{
+        margin-top: 200px;
+    }
+    .card{
+        width:200px ;
+    }
+    
+}
+@media (max-width: 920px) {
+    .card{
+        width:350px ;
+    }
+}
+
+.plans{
+    margin: 20px;
+    display: flex;
+    width: 100%;
+    
+}
+.plansDiv{
+    display:  flex;
+    width:45%;
+    background:var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0, 0.2);
+    margin: 20px;
+    
+}
+.plansInner{
+    margin-top: 50px;
+    min-width: 200px;
+}
+.plansInner h5{
+ font-size: x-small;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.plansInner h4{
+   
+    font-size:x-small;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.plansMain{
+    max-width: 400px;
+}
+.plansMain h2{
+    font-size: xx-large;
+    padding: 16px;
+    font-weight: 600;
+}
+.plansMain p{
+    font-size: small;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: -10px;
+    
+}
+@media (max-width: 1220px) {
+    .plans{
+        display: block;
+    }
+    .plansDiv{
+        width: 80%;
+    }
+}

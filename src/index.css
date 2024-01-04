@@ -246,7 +246,141 @@ ul {
   color: var(--white);
   background: var(--primary-600);
 }
+.actives{
+  cursor: pointer;
+  color: var(--white);
+  background:  var(--primary-500);
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 180px;
+}
+.text-bold{
+  font-weight: 500;
+}
+.dashboard{
+  position: relative;
+  min-height: 300px;
+}
+.first-div{
+  position: absolute;
+  margin: 2px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  
+}
+@media (max-width: 1110px) {
+  .first-div{
+    display: block;
+  }
+  .toggle-btn-container{
+    margin-top: 50px;
+    left: 150px;
+    margin-bottom: 50px;
+  }
+  
+}
+.toggle-btn-container{
+  border: 1.6px solid var(--grey-700);
+  border-radius: 254px;
+  align-items: center;
+  width: 259px;
+  height: 42px;
+  justify-content: space-between;
+  position: relative;
+}
+.dashboard-toggle-btn{
+  border: none;
+  background: transparent;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 33px;
+  width: 123px;
+  margin: 1px;
+  border-radius: 123px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: var(--transition);
+  
+}
+.dashboard-toggle-btn:hover{
+  background: var(--primary-200);
+  margin-left: 2px;margin-top: 2px;padding-left: 3px;
+}
+.month-btn{
+  background: skyblue;
+  height: 34px;
+  width: 123px;
+  border-radius: 123px;
+  padding: 2px;
+  
+}
+.green{color: green;}
+.ann{margin-left: 2px;margin-top: 2px;padding-left: 3px;width: 126px;}
 
+.basic-btn{
+  background: rgb(235, 235, 152);
+}
+.standard-btn{
+  background: pink;
+}
+.premium-btn{
+  background: violet;
+}
+.crossed{
+  position: relative;
+  font-weight: 400;
+  font-size: small;
+}
+.crossed::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 25%;
+  height: 1px;
+  background-color: red;
+  margin-bottom: 9px;
+}
+
+.free-btn{
+  border-radius: 200px;
+  background: greenyellow;
+  font-size: x-small;
+  height: 10px;
+  margin: 16px;
+  width: 100px;
+}
+.get-btn{
+  background: greenyellow;
+  width: 140px;
+  margin: 16px;
+}
+.connect-btn{
+  border-radius: 200px;
+  background: paleturquoise;
+  font-size: x-small;
+  height: 10px;
+  margin: 16px;
+  width: 100px;
+}
+.contact-btn{
+  background: paleturquoise;
+  width: 140px;
+  margin: 16px;
+}
 @media (max-width: 992px) {
 
   .nav-logo{
@@ -257,6 +391,7 @@ ul {
   .nav-logo:hover{
     cursor: pointer;
   }
+ 
 }
 
 
